@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Propuestos</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-4 mb-4 pt-4">
+        <h3>Ejercicios adicionales de Javascript</h3>
+        <ul class="list-group">
+            <li class="list-group-item  ">
+                <p>1. Escribe un programa de una sola línea que haga que aparezca en la pantalla un alert
+                    que diga “HelloWorld”.
+                    </p> <button type="button" class="btn btn-outline-secondary " 
+                    onclick='alert("Hello World!.")'>Resolver</button></li>
+          
+            
+            <li class="list-group-item list-group-item-primary">
+               <p> 2. Escribe un programa de una sola línea que escriba en la pantalla un texto que diga
+                 “HelloWorld” => utilizar (document.write).</p>
+                Rta: <script>document.write("Hello World!.")</script>
+               </li>
+             
+            <li class="list-group-item list-group-item-secondary">
+            <p>3. Escribe un programa de una sola línea que escriba en la pantalla el resultado de sumar 3 + 5.</p>
+             Rta: <script>document.write("8")</script>   
+            </li>
+
+            <li class="list-group-item list-group-item-success">
+                <p>4. Escribe un programa de dos líneas que pida el nombre del usuario con un prompt y
+                    escriba un texto que diga “Hola +  el nombre de usuario introducido por el prompt”
+                    </p>
+                    <button type="button" class="btn btn-outline-secondary " 
+                    onclick="hola()">Resolver</button>
+                <p id="nombre"></p></li>
+            </li>
+
+            <li class="list-group-item list-group-item-danger">
+                <p>5. Escribe un programa de tres líneas que dos números y escriba elresultado de sumar estos dos números.</p>
+                <button type="button" class="btn btn-outline-secondary " 
+                onclick="sumar()">Resolver</button>
+                <p id="resultadoSuma"></p></li>
+            </li>
+
+            <li class="list-group-item list-group-item-warning">
+                <p>6. Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.</p>
+                <button type="button" class="btn btn-outline-secondary " 
+                onclick="mayor()">Resolver</button>
+                <p id="esMayor"></p>
+            </li>
+
+            <li class="list-group-item list-group-item-info">
+                <p>7. Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.</p>
+                <button type="button" class="btn btn-outline-secondary " 
+                onclick="mayorDeTres()">Resolver</button>
+                <p id="mayorTres"></p>
+            </li>
+
+            <li class="list-group-item list-group-item-light">
+               <p>8. Escribe un programa que pida un número y diga si es divisible por 2</p>
+               <button type="button" class="btn btn-outline-secondary " 
+                onclick="esDivisiblex2()">Resolver</button>
+                <p id="dividirx2"></p>
+            </li>
+
+            <li class="list-group-item list-group-item-dark">
+                <p>9. Escribir un programa que pida la edad y si es mayor de 18 años indica que ya puede conducir</p>
+                <button type="button" class="btn btn-outline-secondary " 
+                onclick="mayor18()">Resolver</button>
+                <p id="mayorEdad"></p>
+            </li>
+
+            <li class="list-group-item list-group-item-danger">
+                <p>10. Escribir un programa que pida una nota (número). Muestra la calificación según la nota:</p>
+                <p>(0-3): Muy deficiente,(3-5): Insuficiente,(5-6): Suficiente,(6-7): Bien,(7-9): Notable,(9-10): Sobresaliente</p>
+                <button type="button" class="btn btn-outline-secondary " 
+                onclick="calificar()">Resolver</button>
+                <p id="resultadoCalificar"></p></li>
+            </li>
+
+            <li class="list-group-item list-group-item-warning">
+                <p>11. Realiza un programa que pida cadenas de texto hasta que se pulse “cancelar”. 
+                    Al salir con“cancelar” deben mostrarse todas las cadenas concatenadas con un guión</p>
+                <button type="button" class="btn btn-outline-secondary " 
+                onclick="concatena()">Resolver</button>
+                <p id="mostrar"></p>
+            </li>
+
+            <li class="list-group-item list-group-item-primary">
+                <p>12. Realizar un programa que me permita mostrar un rango de 20 números,
+                     tanto el numero inicial con el del final deben ser dados por el usuario</p>
+                     <button type="button" class="btn btn-outline-secondary " 
+                     onclick="rangoNumerico()">Resolver</button>
+                     <p id="rango"></p>
+
+                </li>
+
+                <li class="list-group-item list-group-item-secondary">
+                    <p>13. Realizar un programa que muestre una lista de nombres almacenados en un Array.</p>
+                    <button type="button" class="btn btn-outline-secondary " 
+                     onclick="arrayNombres()">Resolver</button>
+                     <p id="nombres"></p></li>   
+                    </li>
+        
+                <li class="list-group-item list-group-item-success">
+                        <p>14. Realizar un programa que me permita almacenar en un Array, 
+                            10 nombres y luego mostrarlos por pantalla
+                            <small>(Solo permite ingreso de 3 por un tema de comodidad)</small>
+                            </p>
+                       
+                            <button type="button" class="btn btn-outline-secondary " 
+                            onclick="ingresaNombres()">Resolver</button>
+                        <p id="mostrarNombres"></p></li>
+                </li>
+
+                <li class="list-group-item list-group-item-danger">
+                    <p>15. Crea una función que reciba 2 parámetros, precio e iva, y devuelva el precio con iva incluido. </p>
+                    <button type="button" class="btn btn-outline-secondary " 
+                    onclick="precio()">Resolver</button>
+                    <p id="mostrarPrecio"></p></li>
+                </li>
+          </ul>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script src="scripts.js"></script>
+</body>
+</html>
