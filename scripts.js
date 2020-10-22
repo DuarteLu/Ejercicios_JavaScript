@@ -129,7 +129,7 @@ if (numero1 == null ||  numero1 == "" ) {
                    {
                     mensaje = "Todavia no puedes conducir";
                    }
-           document.getElementById("dividirx2").innerHTML = mensaje;
+           document.getElementById("mayorEdad").innerHTML = mensaje;
 }
 }
 
@@ -143,7 +143,7 @@ if (numero1 == null ||  numero1 == "" ) {
         mensaje = "Has cancelado o introducido un numero vacío";
         } 
         else {
-               if(numero1 <=0 && numero1 < 3){
+               if(numero1 > 0 && numero1 < 3){
                     mensaje ="Muy deficiente";
                   }
                 else if(numero1 == 3 && numero1 <5)  {
